@@ -1,40 +1,57 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+img{
+  border-radius: 50%;
+  width: 220px; height: 220px;
   
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
-    text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }
+}  
+hr {
+border-style: none; 
+border-top-style: dotted;
+border-color: grey;
+border-width:5px;
+width: 30%;
+}
+
+.table-borderless {
+
+letter-spacing: 1px;
+}
+
+.table-borderless td {
+border: none;
+vertical-align: top
+}
+
+.table-border {
+border-collapse: collapse;
+border: 2px solid rgb(140 140 140);
+
+letter-spacing: 1px;
+background-color: beige;
+}
